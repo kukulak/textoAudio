@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/kukulak/frutas/main/img/pantallazoTextoAudio.jpg" alt="TextoAudio" width="838" height="512" >
+<img src="https://raw.githubusercontent.com/kukulak/textoAudio/main/img/pantallazoTextoAudio.jpg" alt="TextoAudio" width="838" height="512" >
 
 
 ## de Texto a Audio
