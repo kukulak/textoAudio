@@ -27,11 +27,13 @@ El escuchar el audio con diferentes voces lo lleva a algo más interesante,
 
 - [x] Implementar lógica básica de lectura de archivos de audio
 - [x] Quitar Bootstrap
-- [ ] Mejorar UX/UI
+- [x] Mejorar UX/UI
 - [ ] Usar RegEx para lectura correcta de archivos
 - [ ] Subir Mínimo Producto Viable
 - [ ] Implementar grabación de audio desde la página
 - [ ] Agregar animación que represente el audio
+- [ ] Implementar base de datos con Django
+- [ ] Programar que se pueda bajar un archivo de audio con el mensaje
 
 ## Contacto
 
