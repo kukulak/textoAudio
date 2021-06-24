@@ -12,6 +12,11 @@ body{
 	/* position: relative; */
 	text-align: center;
 	background-color: rgb(51, 51, 51);
+	background-color: black;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
 	/* background-image: url(../img/fondo-pintura-03.jpg); */
 	/*background-size: 100%;*/
 	/* width: 100%;
@@ -19,6 +24,34 @@ body{
 	/* margin: 0; */
 /*	font-size: 31px;*/
 }
+
+*{
+	margin: 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f15d; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgb(68, 68, 68); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(34, 34, 34); 
+  }
 
 .contenedorChat{
 	display: grid;
@@ -44,34 +77,68 @@ body{
     /* max-width: 480px; */
     /* margin: auto; */
     background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(41, 41, 41, 0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
 }
 
 
 
 ::-webkit-input-placeholder {
-   color: red;
+	color: #737373;
    font-size: 14px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: red;  
+	color: #737373; 
    font-size: 14px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: red;  
+	color: #737373; 
    font-size: 14px;
 }
 
 :-ms-input-placeholder {  
-   color: red;  
+	color: #737373;
    font-size: 14px;
 }
 
 
 #escuchar{
+	
+
+	/* from bootstrap */
+	display: inline-block;
+    padding: 6px 12px;
+    /* margin-bottom: 0; */
+    /* font-size: 14px; */
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+
+	/* //// */
+
 	margin-bottom: 20px;
 	font-size: 18px;
+
 }
 
 #aquiElTexto{
@@ -85,11 +152,39 @@ body{
 }
 
 .form-control{
+
+	/* from boostrap */
+	font-family: inherit;
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+	font: inherit;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+
+	/* /// */
+
+
 	height: 80px !important;
 	border: 1px solid #456B6B !important;
 	border-radius: 2px;
 	/* font-size: 10px; */
 	color: #737373;
+	margin: 18px 0;
+
+
 
 }
 
@@ -163,5 +258,5 @@ body{
 }
 
 #escribe{
-	height: 90px;
+	/* height: 90px; */
 }
