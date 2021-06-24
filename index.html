@@ -3,9 +3,12 @@
 <html>
 <head>
 	<title>readMe.app</title>
-	<meta charset="UTF-8">
- <!-- Bootstrap -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
     <link href="css/main.css" rel="stylesheet">
 
 
@@ -22,7 +25,7 @@
 		<div id= "escribe">
 			<div class="form-group">
 				<label for="aquiElTexto"></label>
-				<textarea type="text" class="form-control" id="aquiElTexto" placeholder="escribe un mensaje" value = ""></textarea>
+				<textarea type="text" class="form-control" id="aquiElTexto" placeholder="Escribe un mensaje" value = ""></textarea>
 			</div>
 			
 			<div class="form-group">
@@ -35,28 +38,58 @@
 		
 		
 		
-		<button id= "escuchar" class="btn btn-default">escuchar</button>
+		<button id= "escuchar" class="btn btn-default">Escuchar</button>
 		
 		<div id= "aquiLosTextos" > 
-				
+				<p class="instrucciones">
+                    Da click para volver a escuchar
+                </p> 
+                <br>
+                <br>
 			</div>
 			
-			<div id= "noHay"></div>
+			<div id= "noHay">
+                <p class="instrucciones">
+                    Palabras por grabar
+                </p>
+                <br>
+                <!-- <br> -->
+            </div>
 			
 		</div>	
 
 
 	</section>
 
+    <div id="btninfo" class="btninfo">
+        <div class="burgerInfo"></div>
+        <div class="burgerInfo"></div>
+        <div class="burgerInfo"></div>
+        <p class="infoInfo">INFO</p>
+    </div>
+    <section id="infomodal" class="info">
 
+        <div  class="infomodal">
+            <p>
+              ¿Cuantas palabras tiene el léxico de una persona común?
+              Buscando en internet se encuentran resultados variados; 300, 500, 1000 ó miles.
+              Pero no solo usa palabras como unidad, cada palabra tiene derivados, conjugaciones, géneros, etcétera.
+              Esto lo transformó en un proyecto interminable. 😐
+            </p>
+            <!-- <br> -->
+            <h1>
+                <!-- Mutación del proyecto. -->
+            </h1>
+            <!-- <br> -->
+            <p>
+                Participa grabando las palabras que faltan, las puedes grabar con tu celular y enviarlas a este <a href="mailto:kukulak.cero@gmail.com">mail</a>, nosotros nos encargamos de editar y subirlo para que todos tengan acceso a las palabras que grabes.
+                <br><br>
+                "Que sea un proyecto leido por todos"
+            </p>           
+        </div>
+    </section>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)--> 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-
-    <script src= "textoAudio.js" type="text/javascript"></script>
+    <script src= "js/textoAudio.js" type="text/javascript"></script>
 
 
 </body>

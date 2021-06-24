@@ -139,6 +139,23 @@ document.getElementById("escuchar").onclick = function() {
 	myFunction()
 };
 
+var infomodal = document.getElementById("infomodal");
+var x = 1;
+function showInfo(){
+	if (x === 0) {
+		infomodal.style.display = "none"
+		x = 1
+		// console.log(x)
+	} else {
+		// console.log("no se que")
+		infomodal.style.display = "grid"
+		x = 0
+	}
+}
+
+document.getElementById('btninfo').onclick = function(){
+	showInfo()
+}
 
 
 

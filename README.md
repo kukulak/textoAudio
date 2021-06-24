@@ -19,14 +19,14 @@ Explorar Audio()
 #### Mutación del proyecto.
 
 ¿Por qué no invitar a la gente que grabe las palabras que faltan?
-al escuchar el audio con diferentes voces lo lleva a algo más interesante,
+El escuchar el audio con diferentes voces lo lleva a algo más interesante,
 "un texto leido por muchas personas" al fin de cuantas son las palabras que todas las personas de habla hispana usan.
 
 
 ## Tareas
 
 - [x] Implementar lógica básica de lectura de archivos de audio
-- [ ] Quitar Bootstrap
+- [x] Quitar Bootstrap
 - [ ] Mejorar UX/UI
 - [ ] Usar RegEx para lectura correcta de archivos
 - [ ] Subir Mínimo Producto Viable
