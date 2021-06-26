@@ -1,0 +1,7 @@
+*.pyc  
+*~  
+*.pot
+__pycache__  
+audioenv  
+db.sqlite3
+.DS_Store
