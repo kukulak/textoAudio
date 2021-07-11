@@ -4,11 +4,15 @@ import sys
 import os
 
 from pydub import AudioSegment
+
+# path stuff
 dirpath = "news/"
 headingsNewsDir = dirpath+"2019-03-01/"
 includeDir = dirpath+"/include/"
 generatedFile = "combined_news_file.wav"
 
+
+# define files
 filenames = glob.glob(headingsNewsDir+'*.wav')
 welcome  = AudioSegment.from_wav(includeDir + "welcome.wav")
 thankyou = AudioSegment.from_wav(includeDir + "thankyou.wav")
@@ -16,6 +20,8 @@ beep     = AudioSegment.from_wav(includeDir + "beep.wav")
 
 filenameswithbeep = [welcome, beep]
 combined = AudioSegment.empty()
+
+# files in directory
 for filename in filenames:
 	audiofilename = AudioSegment.from_wav(filename)
 	filenameswithbeep.extend([audiofilename, beep])
