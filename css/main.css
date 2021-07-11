@@ -123,7 +123,7 @@ body{
 
 	/* from bootstrap */
 	display: inline-block;
-    padding: 6px 12px;
+    padding: 13px 22px;
     /* margin-bottom: 0; */
     /* font-size: 14px; */
     font-weight: 100;
@@ -150,7 +150,7 @@ body{
 	/* //// */
 
 	/* margin-bottom: 20px; */
-	font-size: 18px;
+	font-size: 25px;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	letter-spacing: 1.5px;
 }
@@ -170,6 +170,10 @@ body{
 	margin: -15px -12px -24px;
 	z-index: 8;
     position: relative;
+	align-self: start;
+    justify-self: end;
+    /* grid-column-start: 1; */
+    grid-row-start: 1;
 }
 
 .escucharTexto{
@@ -193,7 +197,7 @@ body{
 	/* from boostrap */
 	font-family: inherit;
 	display: block;
-    width: 100%;
+    width: 105%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -214,7 +218,7 @@ body{
 	/* /// */
 
 
-	height: 200px !important;
+	height: 105px !important;
 	/* border: 1px solid #456B6B !important; */
 	border-radius: 7px;
 	/* font-size: 10px; */
@@ -237,10 +241,8 @@ body{
 
 .form-group{
 	display: grid;
-    /* justify-content: center;
-	width: 290px;
-	margin-bottom: 0; */
 	position: relative;
+	justify-items: center;
 }
 
 .contenedorTextos{
@@ -250,7 +252,7 @@ body{
     border-radius: 20px;
     position: relative;
 	overflow: hidden;
-	height: 200px;
+	height: 244px;
 }
 
 #aquiLosTextos{
@@ -259,7 +261,7 @@ body{
 	border-radius: 14px;
 	text-align: left;
 
-	height: 177px;
+	height: 220px;
 	/* padding: 10px; */
 
 /* 
@@ -276,22 +278,21 @@ body{
 
 .contenedorNoHay{
 	width: 120%;
-	/* background-color: rgb(0 0 0); */
-	border-radius: 20px;
-	height: 100px;
+	height: 140px;
+    background: #424242;
 }
 
 #noHay{
 
 	text-align: left;
-	height: 60px;
+	height: 109px;
 	width: 97%;
 
 	padding: 0 10px;
 
 	margin-top: 5%;
 	overflow: auto;
-	color: rgba(255, 255, 255, 0.26);
+	color: rgba(255, 255, 255, 36%);
 	font-size: 1.3em;
 	font-weight: 100;
 	overflow-x: hidden;
@@ -352,6 +353,7 @@ body{
 	align-content: center;
 	justify-content: center;
 	background-color: rgb(34, 34, 34);
+	z-index: 1000;
 }
 
 .btninfo{
@@ -361,7 +363,7 @@ body{
 	padding-left: 15px;
 	padding-top: 15px;
 	cursor: pointer;
-	z-index: 1000;
+	z-index: 10001;
 }
 
 .infoInfo{
