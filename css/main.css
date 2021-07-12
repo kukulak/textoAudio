@@ -1,15 +1,9 @@
 html{
-	/* font-size: 13em;
-	width: 100%;
-	height: 100%;
-	top:0;
-	left: 0;
-	display: inline-block;
-	margin: 0; */
+
 }
 
 body{
-	/* position: relative; */
+
 	text-align: center;
 	background-color: rgb(51, 51, 51);
 	background-color: black;
@@ -20,11 +14,8 @@ body{
 	background-image: url(../img/fondoTextoAudio@2x.jpg);
 	background-size: 100%;
 	background-size: cover;
-	background-size: inherit;
-	/* width: 100%;
-	height: 100%; */
-	/* margin: 0; */
-/*	font-size: 31px;*/
+	/* background-size: inherit; */
+
 }
 
 *{
@@ -61,7 +52,7 @@ body{
     height: 99vh;
 	justify-content: center;
 	align-content: center;
-	/* background-color: rgba(0, 255, 255, 0.226); */
+
 }
 .chatUno{
 	border-radius: 30px;
@@ -197,9 +188,10 @@ body{
 	/* from boostrap */
 	font-family: inherit;
 	display: block;
-    width: 105%;
+    width: 112%;
     height: 34px;
     padding: 6px 12px;
+	padding-right: 50px;
     font-size: 14px;
 	font: inherit;
     line-height: 1.42857143;
@@ -208,26 +200,10 @@ body{
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
-    /* -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%); */
-    /* box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%); */
-    /* -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
-
-
-	/* /// */
-
-
 	height: 105px !important;
-	/* border: 1px solid #456B6B !important; */
 	border-radius: 7px;
-	/* font-size: 10px; */
 	color: #737373;
-	/* margin: 18px 0; */
 	border: transparent;
-
-
-
 }
 
 

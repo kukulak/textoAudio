@@ -8,6 +8,12 @@ var parrafo
 
 var nextWord = 1;
 
+let audioArch, fft, binWidth
+
+// FFT analysis resolution.
+// Must be a power of two between 16 and 1024.
+const bins = 64
+
 var fileDoesNotExist = function(whosError, afterError, index){
 	        whosError.onerror = function(){
 	        	document.getElementById("noHay").innerHTML += afterError[index] + " ";
@@ -160,3 +166,37 @@ document.getElementById('btninfo').onclick = function(){
 
 
 
+
+function visualTalk(sound){
+
+	// la funcion va asi: 
+	// 1.- tomo el nombre del archivo por la cadena a reproducir elnombre del archivo es Audio
+	// 2.- hago draw donde vamos a generar un objeto para la representacion visual
+	// 3.- lo ponemos en un canvas que estara en nuestro html o que se genera con setUp
+
+	function preload(){
+		audioArch = loadSound('../audiomp3/abeja-01.mp3')
+	}
+
+	function setup() {
+		const canvas = createCanvas(200, 20)
+	  
+		fft = new p5.FFT(0, bins)
+	  
+		// The size of each rectangle.
+		binWidth = width / bins
+	  }
+
+	  function draw() {
+		background(0)
+		noStroke()
+	  
+		const spectrum = fft.analyze()
+	  
+		for (let i = 0; i < spectrum.length; i++) {
+		  let y = map(spectrum[i], 0, 255, height, 0)
+		  rect(i * binWidth, y, binWidth, height - y)
+		}
+	  }
+
+}
